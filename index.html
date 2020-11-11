@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<main>
+		<div class="wrapper">
+			<div class="switches">
+				<div class="switches__wrapper">
+					LVL:
+					<select name="" id="speedLVL">
+						<option value="5000">Low</option>
+						<option value="3000">Middle</option>
+						<option value="1500">Hard</option>
+					</select>
+				</div>
+
+				<div class="switches__wrapper">
+					LANGUAGE:
+					<select name="" id="language">
+						<option value="RU">RU</option>
+						<option value="ENG">ENG</option>
+					</select>
+				</div>
+			</div>
+			<div class="content__wrapper">
+				<div class="sensor__wrapper">
+					<p class="sensor__header">TIMER</p>
+					<div class="timer__value opacity"><span class="timer_min opacity">0</span>:<span
+							class="timer_sec"></span>
+					</div>
+				</div>
+				<div class="random_wrapper">
+					<div class="random-value">
+						???
+					</div>
+				</div>
+				<div class="sensor__wrapper">
+					<p class="sensor__header">SCORE</p>
+					<div class="score__value">0</div>
+				</div>
+			</div>
+			<div class="btn__wrapper">
+				<a href="" class="start main-btn">START</a><a href="" class="main-btn stop">PAUSE</a><a href=""
+					class="main-btn stop">NEW-GAME</a>
+			</div>
+			<div class="keyboard">
+				<div class="keyboard__header">
+					<div class="keyboard__header-part">
+						<div class="btn-1 btn">ESC</div>
+					</div>
+					<div class="keyboard__header-part">
+						<div class="btn-1 btn">F1</div>
+						<div class="btn-1 btn">F2</div>
+						<div class="btn-1 btn">F3</div>
+						<div class="btn-1 btn">F4</div>
+					</div>
+					<div class="keyboard__header-part">
+						<div class="btn-1 btn">F5</div>
+						<div class="btn-1 btn">F6</div>
+						<div class="btn-1 btn">F7</div>
+						<div class="btn-1 btn">F8</div>
+					</div>
+					<div class="keyboard__header-part">
+						<div class="btn-1 btn">F9</div>
+						<div class="btn-1 btn">F10</div>
+						<div class="btn-1 btn">F11</div>
+						<div class="btn-1 btn">F12</div>
+					</div>
+				</div>
+				<div class="keyboard__main">
+					<div class="keyboard__main-line">
+						<div class="btn-1 btn" data-btn="`" data-btn-ru="ё">~`</div>
+						<div class="btn-1 btn" data-btn="1" data-btn-ru="1">1!</div>
+						<div class="btn-1 btn" data-btn="2" data-btn-ru="2">2@</div>
+						<div class="btn-1 btn" data-btn="3" data-btn-ru="3">3#</div>
+						<div class="btn-1 btn" data-btn="4" data-btn-ru="4">4$</div>
+						<div class="btn-1 btn" data-btn="5" data-btn-ru="5">5%</div>
+						<div class="btn-1 btn" data-btn="6" data-btn-ru="6">6^</div>
+						<div class="btn-1 btn" data-btn="7" data-btn-ru="7">7&</div>
+						<div class="btn-1 btn" data-btn="8" data-btn-ru="8">8*</div>
+						<div class="btn-1 btn" data-btn="9" data-btn-ru="9">9(</div>
+						<div class="btn-1 btn" data-btn="0" data-btn-ru="0">0)</div>
+						<div class="btn-1 btn" data-btn="-" data-btn-ru="-">_ -</div>
+						<div class="btn-1 btn" data-btn="=" data-btn-ru="=">+ =</div>
+						<div class="btn-2 btn" data-btn="Backspace" data-btn-ru="Backspace">Back</div>
+					</div>
+					<div class="keyboard__main-line">
+						<div class="btn-3 btn">TAB</div>
+						<div class="btn-1 btn" data-btn="q" data-btn-ru="й">Q<span>й</span></div>
+						<div class="btn-1 btn" data-btn="w" data-btn-ru="ц">W<span>ц</span></div>
+						<div class="btn-1 btn" data-btn="e" data-btn-ru="у">E<span>у</span></div>
+						<div class="btn-1 btn" data-btn="r" data-btn-ru="к">R<span>к</span></div>
+						<div class="btn-1 btn" data-btn="t" data-btn-ru="е">T<span>е</span></div>
+						<div class="btn-1 btn" data-btn="y" data-btn-ru="н">Y<span>н</span></div>
+						<div class="btn-1 btn" data-btn="u" data-btn-ru="г">U<span>г</span></div>
+						<div class="btn-1 btn" data-btn="i" data-btn-ru="ш">I<span>ш</span></div>
+						<div class="btn-1 btn" data-btn="o" data-btn-ru="щ">O<span>щ</span></div>
+						<div class="btn-1 btn" data-btn="p" data-btn-ru="з">P<span>з</span></div>
+						<div class="btn-1 btn" data-btn="[" data-btn-ru="х">[{<span>х</span></div>
+						<div class="btn-1 btn" data-btn="]" data-btn-ru="ъ">]}<span>ъ</span></div>
+						<div class="btn-3 btn" data-btn="\" data-btn-ru="\">\|</div>
+					</div>
+					<div class="keyboard__main-line">
+						<div class="btn-4 btn">Caps Lock</div>
+						<div class="btn-1 btn" data-btn="a" data-btn-ru="ф">A<span>ф</span></div>
+						<div class="btn-1 btn" data-btn="s" data-btn-ru="ы">S<span>ы</span></div>
+						<div class="btn-1 btn" data-btn="d" data-btn-ru="в">D<span>в</span></div>
+						<div class="btn-1 btn" data-btn="f" data-btn-ru="а">F<span>а</span></div>
+						<div class="btn-1 btn" data-btn="g" data-btn-ru="п">G<span>п</span></div>
+						<div class="btn-1 btn" data-btn="h" data-btn-ru="р">H<span>р</span></div>
+						<div class="btn-1 btn" data-btn="j" data-btn-ru="о">J<span>о</span></div>
+						<div class="btn-1 btn" data-btn="k" data-btn-ru="л">K<span>л</span></div>
+						<div class="btn-1 btn" data-btn="l" data-btn-ru="д">L<span>д</span></div>
+						<div class="btn-1 btn" data-btn=";" data-btn-ru="ж">;:<span>ж</span></div>
+						<div class="btn-1 btn" data-btn="'" data-btn-ru="э">'"<span>э</span></div>
+						<div class="btn-4 btn">Enter</div>
+					</div>
+					<div class="keyboard__main-line">
+						<div class="btn-5 btn">SHIFT</div>
+						<div class="btn-1 btn" data-btn="z" data-btn-ru="я">Z<span>я</span></div>
+						<div class="btn-1 btn" data-btn="x" data-btn-ru="ч">X<span>ч</span></div>
+						<div class="btn-1 btn" data-btn="c" data-btn-ru="с">C<span>с</span></div>
+						<div class="btn-1 btn" data-btn="v" data-btn-ru="м">V<span>м</span></div>
+						<div class="btn-1 btn" data-btn="b" data-btn-ru="и">B<span>и</span></div>
+						<div class="btn-1 btn" data-btn="n" data-btn-ru="т">N<span>т</span></div>
+						<div class="btn-1 btn" data-btn="m" data-btn-ru="ь">M<span>ь</span></div>
+						<div class="btn-1 btn" data-btn="," data-btn-ru="б">,<span>б</span></div>
+						<div class="btn-1 btn" data-btn="." data-btn-ru="ю">.><span>ю</span></div>
+						<div class="btn-1 btn" data-btn="/" data-btn-ru=".">?/<span>.</span></div>
+						<div class="btn-5 btn">SHIFT</div>
+					</div>
+					<div class="keyboard__main-line">
+						<div class="btn-2 btn">CTRL</div>
+						<div class="btn-1 btn">ALT</div>
+						<div class="btn-long btn"></div>
+						<div class="btn-1 btn">ALT</div>
+						<div class="btn-2 btn">CTRL</div>
+					</div>
+				</div>
+
+			</div>
+			<script src="script.js"></script>
+			</script>
+</body>
+
+</html>
