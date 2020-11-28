@@ -35,8 +35,8 @@ let valueBoxWrapper = document.querySelector('.random_wrapper');
 
 let min = document.querySelector('.timer_min');
 let sec = document.querySelector('.timer_sec');
-sec.innerHTML = 0;
-min.innerHTML = 0;
+sec.innerHTML = 30;
+min.innerHTML = 1;
 
 let speedValue = document.getElementById('speedLVL');
 
@@ -61,22 +61,22 @@ document.querySelector('.start').onclick = function () {
 
 		}, speed);
 		counterStart++;
+		min.classList.remove('opacity');
 		let timeTimer = setInterval(() => {
-			sec.innerHTML++;
-			if (sec.innerHTML == 60) {
-				min.classList.remove('opacity');
-				min.innerHTML++;
+			sec.innerHTML--;
+			if (sec.innerHTML == 0 && min.innerHTML == 0) {
+				alert(`you score ${scoreCounter.innerHTML}`)
+				min.innerHTML = 0;
 				sec.innerHTML = 0;
-				if (min.innerHTML == 1) {
-					alert(`you score ${scoreCounter.innerHTML}`)
-					window.location.reload();
-
-				}
+				window.location.reload();
+			}
+			if (sec.innerHTML == 0) {
+				min.innerHTML--;
+				sec.innerHTML = 60;
 			}
 		}, 1000);
 
 
-		//остановка таймера и рандомайзера//
 		document.querySelector('.stop').onclick = function () {
 			event.preventDefault();
 			clearInterval(valueTimer);
